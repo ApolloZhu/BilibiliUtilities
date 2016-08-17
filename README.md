@@ -25,6 +25,18 @@ Get number of fans by the user identifier
 
 If you want auto collect and using Google Chrome as web browser, get helper using [`DownloadHelper`](https://github.com/WWITDC/BilibiliUtilities/blob/master/DownloadHelper/HelperDownloader.py) instead
 
+### Supported System(s)
+|x86|x64|
+|:--:|:--:|
+|![](https://img.shields.io/badge/win10-not%20tested-lightgrey.svg)|![](https://img.shields.io/badge/win10-passed-brightgreen.svg)|
+|![](https://img.shields.io/badge/win8.1-not%20tested-lightgrey.svg)|![](https://img.shields.io/badge/win8.1-not%20tested-lightgrey.svg)|
+|![](https://img.shields.io/badge/win8-not%20tested-lightgrey.svg)|![](https://img.shields.io/badge/win8-not%20tested-lightgrey.svg)|
+|![](https://img.shields.io/badge/win7-passed-brightgreen.svg)|![](https://img.shields.io/badge/win7-not%20tested-lightgrey.svg)|
+|![](https://img.shields.io/badge/vista-not%20tested-lightgrey.svg)|![](https://img.shields.io/badge/vista-not%20tested-lightgrey.svg)|
+|![](https://img.shields.io/badge/xp-not%20tested-lightgrey.svg)|![](https://img.shields.io/badge/xp-not%20tested-lightgrey.svg)|
+
+***Important***: Keyboard Hook is **not** available when testing with `Visual Studio`
+
 `typealias Coin = "瓜子"`
 Every 3, 6, 10 minutes, there will be `coin` available for [live.bilibili.com](live.bilibili.com).
 This program pop up a MsgBox to notify you it is time to get those coins, so you don't have to stare at the live all the time
