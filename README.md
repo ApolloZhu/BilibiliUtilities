@@ -4,7 +4,13 @@ Many tools that relate to Bilibili.com
 ## DownloadHelper
 ![](https://img.shields.io/badge/language-Python3-blue.svg)
 
-Download [bilibili-helper](https://github.com/zacyu/bilibili-helper) without need of accessing Google or viewing **ads** on [official update page](http://blackbili.nmzh.net/archives/bilibilihelper.html)
+Download [bilibili-helper](https://github.com/zacyu/bilibili-helper) without need of accessing Google or viewing ***ads*** on [official update page](http://blackbili.nmzh.net/archives/bilibilihelper.html)
+
+### Language supported
+- English
+- Chinese
+
+***Localization are welcomed***
 
 ## GettingFanNumber
 ![](https://img.shields.io/badge/language-Python3-blue.svg) ![](https://img.shields.io/badge/dependencies-requests-blue.svg)
@@ -17,7 +23,7 @@ Get number of fans by the user identifier
 ## BilibiliGetCoinNotification
 ![](https://img.shields.io/badge/language-Visual%20Basic-7D43AF.svg)
 
-If you want auto collect and using Google Chrome as web browser, get helper using `DownloadHelper` instead
+If you want auto collect and using Google Chrome as web browser, get helper using [`DownloadHelper`](https://github.com/WWITDC/BilibiliUtilities/blob/master/DownloadHelper/HelperDownloader.py) instead
 
 `typealias Coin = "瓜子"`
 Every 3, 6, 10 minutes, there will be `coin` available for [live.bilibili.com](live.bilibili.com).
