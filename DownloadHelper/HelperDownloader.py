@@ -13,9 +13,9 @@ localization = {
         "sourceChanged": "The downlaod page has changed, developers are trying to solve this.\nPlease download the extension from {0}",
         "subject": "Bug of BBHelper Donwloader",
         "latestVersion": "Latest version: v",
-        "confirmDownload": "Start to download? (y/n, or `ENTER` to start directly)",
+        "confirmDownload": "Start to download? (y/n, `ENTER` to start directly, or specify a version to download)",
         "downloadingProgress": "\033[17DDownloading: {0:3}%",
-        "downloadError": "An error occured while downloading",
+        "downloadError": "An error occured while downloading\nPlease check your network or specified version number",
         "downloadCancel": "Cancelled downloading extension of versoin v{0}",
         "downloadComplete": "Download completed!",
         "unzip": "Start to unzip",
@@ -28,10 +28,10 @@ localization = {
         "sourceChanged": "网页内容发生改变，开发者正在处理中\n请直接从 {0} 下载",
         "subject": "BiliBili助手下载器异常报告",
         "latestVersion": "当前最新版本: v",
-        "confirmDownload": "是否需要下载? (y/n，或直接回车开始):",
+        "confirmDownload": "是否需要下载? (y/n，直接回车开始，或是指定版本号):",
         "downloadingProgress": "\033[14D下载进度：{0:3}%",
-        "downloadError": "下载过程出现问题",
-        "downloadCancel": "已取消下载 v {0} 版本的 BiliBili助手",
+        "downloadError": "下载过程出现问题\n请检查网络 或 输入版本号是否正确",
+        "downloadCancel": "已取消下载 v{0} 版本的 BiliBili助手",
         "downloadComplete": "下载完成",
         "unzip": "开始解压",
         "unzipError": "解压过程出现问题",
@@ -61,9 +61,15 @@ def downloadBiliBiliHelper():
                 print(localization[currentLanguage]["latestVersion"]+ versionNumber)
                 print(localization[currentLanguage]["confirmDownload"], end=" ")
                 response = input()
-                if (response == "y" or response == ""):
+                if (response == "n" or response == "no"):
+                    print(localization[currentLanguage]["downloadCancel"].format(versionNumber))
+                    return
+                else:
                     try:
-                        packageName = versionNumber + ".zip"
+                        packageName = response
+                        if (response == "y" or response == "yes" or response == ""):
+                            packageName = versionNumber
+                        packageName += ".zip"
                         source = "http://download.sueri.cn/software/Helper" + packageName
                         packagePath = os.getcwd() + "/" + packageName
                         urllib.request.urlretrieve(source, packagePath, downloadProgressHandler)
@@ -87,9 +93,6 @@ def downloadBiliBiliHelper():
                             print("\033[;31m" + localization[currentLanguage]["unzipError"] + "\033[0m")
                     except:
                        print("\033[;31m" + localization[currentLanguage]["downloadError"] + "\033[0m") 
-                else:
-                    print(localization[currentLanguage]["downloadCancel"].format(versionNumber))
-                    return
             except:
                 print("\033[;31m" + localization[currentLanguage]["sourceChanged"].format(link) + "\033[0m")
                 webbrowser.open("mailto:public-apollonian@outlook.com?subject=" + localization[currentLanguage]["subject"])
