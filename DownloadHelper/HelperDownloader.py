@@ -70,12 +70,19 @@ def downloadBiliBiliHelper():
                         print("\n\033[;32m" + localization[currentLanguage]["downloadComplete"] + "\033[0m")
                         print(localization[currentLanguage]["unzip"])
                         try:
-                            extensionName = "bilibilihelper" + versionNumber + ".crx"
+                            extensionName = ".crx"
                             with zipfile.ZipFile(packageName, 'r') as package:
-                                package.extract(extensionName)
-                            os.remove(packagePath)
-                            print("\033[;32m" + localization[currentLanguage]["unzipComplete"] + "\033[0m")
-                            print(localization[currentLanguage]["fileLocation"].format(os.getcwd(),extensionName))
+                                for name in package.namelist():
+                                    if name.find(extensionName) > 0:
+                                        extensionName = name;
+                                        package.extract(extensionName)
+                                        break
+                            if os.path.exists(extensionName):
+                                os.remove(packagePath)
+                                print("\033[;32m" + localization[currentLanguage]["unzipComplete"] + "\033[0m")
+                                print(localization[currentLanguage]["fileLocation"].format(os.getcwd(),extensionName))
+                            else:
+                                raise IOError
                         except:
                             print("\033[;31m" + localization[currentLanguage]["unzipError"] + "\033[0m")
                     except:
