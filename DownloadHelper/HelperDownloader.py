@@ -59,8 +59,7 @@ def downloadBiliBiliHelper():
                 versionNumberRight = html.index("来啦！")
                 versionNumber = html[versionNumberLeft:versionNumberRight]
                 print(localization[currentLanguage]["latestVersion"]+ versionNumber)
-                print(localization[currentLanguage]["confirmDownload"], end=" ")
-                response = input()
+                response = input(localization[currentLanguage]["confirmDownload"])
                 if (response == "n" or response == "no"):
                     print(localization[currentLanguage]["downloadCancel"].format(versionNumber))
                     return
