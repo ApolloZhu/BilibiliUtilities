@@ -30,8 +30,8 @@ If you want auto collect and using Google Chrome as web browser, get helper usin
 |:--:|:--:|:--:|
 |10|![](https://img.shields.io/badge/test-passed-brightgreen.svg)|![](https://img.shields.io/badge/test-passed-brightgreen.svg)|
 |8.1|![](https://img.shields.io/badge/test-not%20tested-lightgrey.svg)|![](https://img.shields.io/badge/test-passed-brightgreen.svg)|
-|8|![](https://img.shields.io/badge/test-passed-brightgreen.svg)|![](https://img.shields.io/badge/test-not%20tested-lightgrey.svg)|
-|7|![](https://img.shields.io/badge/test-passed-brightgreen.svg)|![](https://img.shields.io/badge/test-not%20tested-lightgrey.svg)|
+|8|![](https://img.shields.io/badge/test-passed-brightgreen.svg)|![](https://img.shields.io/badge/test-passed-brightgreen.svg)|
+|7|![](https://img.shields.io/badge/test-should%20pass-yellow.svg)|![](https://img.shields.io/badge/test-failed-red.svg)|
 |vista|![](https://img.shields.io/badge/test-not%20tested-lightgrey.svg)|![](https://img.shields.io/badge/test-not%20tested-lightgrey.svg)|
 |xp|![](https://img.shields.io/badge/test-failed-red.svg)|![](https://img.shields.io/badge/test-failed-red.svg)|
 
