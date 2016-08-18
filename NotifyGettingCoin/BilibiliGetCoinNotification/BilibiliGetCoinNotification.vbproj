@@ -8,7 +8,7 @@
     <OutputType>WinExe</OutputType>
     <StartupObject>BilibiliGetCoinNotification.My.MyApplication</StartupObject>
     <RootNamespace>BilibiliGetCoinNotification</RootNamespace>
-    <AssemblyName>BilibiliGetCoinNotification</AssemblyName>
+    <AssemblyName>Notifier</AssemblyName>
     <FileAlignment>512</FileAlignment>
     <MyType>WindowsForms</MyType>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
