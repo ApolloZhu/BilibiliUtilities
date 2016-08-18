@@ -25,15 +25,15 @@ Get number of fans by the user identifier
 
 If you want auto collect and using Google Chrome as web browser, get helper using [`DownloadHelper`](https://github.com/WWITDC/BilibiliUtilities/blob/master/DownloadHelper/HelperDownloader.py) instead
 
-### Supported System(s)
-|x86|x64|
-|:--:|:--:|
-|![](https://img.shields.io/badge/win10-not%20tested-lightgrey.svg)|![](https://img.shields.io/badge/win10-passed-brightgreen.svg)|
-|![](https://img.shields.io/badge/win8.1-not%20tested-lightgrey.svg)|![](https://img.shields.io/badge/win8.1-not%20tested-lightgrey.svg)|
-|![](https://img.shields.io/badge/win8-not%20tested-lightgrey.svg)|![](https://img.shields.io/badge/win8-not%20tested-lightgrey.svg)|
-|![](https://img.shields.io/badge/win7-passed-brightgreen.svg)|![](https://img.shields.io/badge/win7-not%20tested-lightgrey.svg)|
-|![](https://img.shields.io/badge/vista-not%20tested-lightgrey.svg)|![](https://img.shields.io/badge/vista-not%20tested-lightgrey.svg)|
-|![](https://img.shields.io/badge/xp-not%20tested-lightgrey.svg)|![](https://img.shields.io/badge/xp-not%20tested-lightgrey.svg)|
+### Supported Systems
+||x86|x64|
+|:--:|:--:|:--:|
+|10|![](https://img.shields.io/badge/test-passed-brightgreen.svg)|![](https://img.shields.io/badge/test-passed-brightgreen.svg)|
+|8.1|![](https://img.shields.io/badge/test-not%20tested-lightgrey.svg)|![](https://img.shields.io/badge/test-passed-brightgreen.svg)|
+|8|![](https://img.shields.io/badge/test-passed-brightgreen.svg)|![](https://img.shields.io/badge/test-not%20tested-lightgrey.svg)|
+|7|![](https://img.shields.io/badge/test-passed-brightgreen.svg)|![](https://img.shields.io/badge/test-not%20tested-lightgrey.svg)|
+|vista|![](https://img.shields.io/badge/test-not%20tested-lightgrey.svg)|![](https://img.shields.io/badge/test-not%20tested-lightgrey.svg)|
+|xp|![](https://img.shields.io/badge/test-failed-red.svg)|![](https://img.shields.io/badge/test-failed-red.svg)|
 
 ***Important***: Keyboard Hook is **not** available when testing with `Visual Studio`
 
